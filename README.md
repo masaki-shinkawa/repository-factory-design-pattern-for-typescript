@@ -1,39 +1,7 @@
-# vue-ts
+# RepositoryFactoryデザインパターンをTypescriptで作成
 
-## Project setup
-```
-yarn install
-```
+### 参考記事
+https://qiita.com/07JP27/items/0923cbe3b6435c19d761
 
-### Compiles and hot-reloads for development
-```
-yarn run serve
-```
-
-### Compiles and minifies for production
-```
-yarn run build
-```
-
-### Run your tests
-```
-yarn run test
-```
-
-### Lints and fixes files
-```
-yarn run lint
-```
-
-### Run your end-to-end tests
-```
-yarn run test:e2e
-```
-
-### Run your unit tests
-```
-yarn run test:unit
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+元の記事ではjavascriptを使用していたので、typescriptとclass構文で作成。
+RepositoryFactoryの実装があまり納得行かなかったのでPR募集中。

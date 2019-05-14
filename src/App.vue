@@ -8,6 +8,25 @@
   </div>
 </template>
 
+<script lang="ts">
+import Vue from "vue";
+import { RepositoryFactory } from "@/repositories/RepositoryFactory";
+
+export default Vue.extend({
+  async created() {
+    // FactoryからRepositoryのインスタンス取得
+    const userRepository = RepositoryFactory.get().users;
+    // APIの呼び出し
+    const users = await userRepository.getAll({
+      page: 1,
+      per_page: 10
+    });
+
+    console.log(users);
+  }
+});
+</script>
+
 <style lang="scss">
 #app {
   font-family: "Avenir", Helvetica, Arial, sans-serif;
